@@ -15,9 +15,17 @@ def join_ingredients(src)
 end
 
 def find_greater_pair(src)
-  # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
-  # Produce a new Array that contains the larger number of each of the pairs
-  # that are in the inner Arrays
+  largest_numbers = []
+  row_index = 0
+  while row_index < src.count do
+    element_index = 0
+    numbers = []
+    while element_index < src[row_index].count do
+      numbers << src[row_index][element_index]
+      element_index += 1
+    end
+    
+  end
 end
 
 def total_even_pairs(src)
