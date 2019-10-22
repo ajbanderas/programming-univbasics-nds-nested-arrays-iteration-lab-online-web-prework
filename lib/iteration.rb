@@ -41,9 +41,12 @@ def total_even_pairs(src)
       is_even << src[row_index][element_index]
       element_index += 1
     end
-    if (is_even[0]%2) + (is_even[1]%2) == 0 do
+    if (is_even[0]%2) + (is_even[1]%2) == 0
+      total += (is_even[0] + is_even[1])
     end
+    row_index += 1
   end
+  total
 end
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # if both numbers in the pair are even, then add both those numbers to the
