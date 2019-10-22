@@ -1,16 +1,11 @@
 def join_ingredients(src)
-  row_index = 0
-  topping_string = []
-  while row_index < src.count do
-    element_index = 0
-    toppings = []
-    while element_index < src[row_index].count do
-      inner_elements = src[row_index][element_index]
-    end
-  topping_string = "I love #{toppings[0]} and #{toppings[1]} on my pizza"
-  row_index += 1
-  end
-  return topping_string
+  # Given an Array of 2-element Arrays ( [ [food1, food2], [food3, # food4]....[foodN, foodM]]):
+  #
+  # Build a new Array that contains strings where each pair of foods is
+  # inserted into this template:
+  #
+  # "I love (inner array element 0) and (inner array element 1) on my pizza""
+  # As such, there should be a new String for each inner array, or pair
 end
 
 def find_greater_pair(src)
