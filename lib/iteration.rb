@@ -24,7 +24,7 @@ def find_greater_pair(src)
       numbers << src[row_index][element_index]
       element_index += 1
     end
-    largest_numbers << numbers[0] > numbers[1]
+    largest_numbers << numbers[0] > numbers[1] ? numbers[0] : 
   end
 end
 
